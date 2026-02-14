@@ -33,7 +33,6 @@ basic-phishing-simulation/
 ├── captured.txt
 └── templates/
     └── login.html
-
 ___________________________________________________________________________
 
 How To Run
