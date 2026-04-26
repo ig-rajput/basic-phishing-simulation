@@ -1,21 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login Page</title>
+<title>Security Awareness Demo</title>
+
+<style>
+body{
+font-family:Arial;
+background:#f2f2f2;
+}
+
+.box{
+width:350px;
+margin:100px auto;
+background:white;
+padding:30px;
+border-radius:8px;
+box-shadow:0 0 10px gray;
+}
+
+h2{
+text-align:center;
+}
+
+input{
+width:100%;
+padding:10px;
+margin-top:8px;
+margin-bottom:15px;
+}
+
+button{
+width:100%;
+padding:10px;
+cursor:pointer;
+}
+
+.note{
+margin-top:20px;
+font-size:14px;
+color:gray;
+text-align:center;
+}
+</style>
+
 </head>
 <body>
 
-    <h2>Login</h2>
+<div class="box">
 
-    <form action="/login" method="POST">
-        <label>Username:</label><br>
-        <input type="text" name="username" required><br><br>
+<h2>Security Awareness Demo Portal</h2>
 
-        <label>Password:</label><br>
-        <input type="password" name="password" required><br><br>
+<form action="/login" method="POST">
 
-        <button type="submit">Login</button>
-    </form>
+<label>Email</label>
+<input type="text" name="username" required>
+
+<label>Password</label>
+<input type="password" name="password" required>
+
+<button type="submit">
+Login
+</button>
+
+</form>
+
+<p class="note">
+Educational phishing awareness simulation
+</p>
+
+</div>
 
 </body>
 </html>

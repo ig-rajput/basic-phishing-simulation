@@ -1,65 +1,94 @@
-Basic Phishing Awareness Simulation (Flask)
+# Phishing Awareness Simulation
 
-This is a simple phishing awareness simulation built using Python and Flask.
-The purpose of this project is to understand how phishing login pages work and how user credentials can be captured in insecure systems.
+A beginner cybersecurity project I built using Python and Flask to understand how phishing pages imitate real login portals and how awareness training can help people recognize these attacks.
 
-This project is created only for educational and defensive learning purposes.
+This project is a simulation for education only and runs locally on localhost.
 
-___________________________________________________________________________
+## Why I Built This
+I wanted hands-on practice with social engineering concepts, not just read about phishing attacks in theory.
 
-What This Project Does
+This project helped me explore:
+- How phishing pages mimic legitimate websites
+- How user input can be targeted in phishing attacks
+- Why awareness training matters
+- Basic Flask web development
 
-- Creates a fake login page using HTML
-- Accepts username and password input
-- Stores submitted credentials in a local file (captured.txt)
-- Runs on localhost (127.0.0.1) only
+## Features
+- Simulated login portal
+- Educational phishing awareness demo
+- Displays awareness warning after form submission
+- Logs demo submissions locally for testing
+- Runs only on localhost
 
-___________________________________________________________________________
-
-Technologies Used
-
+## Technologies Used
 - Python
 - Flask
-- HTML
+- HTML/CSS
 - Basic file handling
 
-___________________________________________________________________________
+## Project Structure
 
-Project Structure
-
-```
+```text
 basic-phishing-simulation/
-│
 ├── app.py
-├── captured.txt
-└── templates/
-    └── login.html
+├── demo_submissions.txt
+├── templates/
+│   ├── login.html
+│   └── result.html
+├── screenshots/
+└── README.md
 ```
-___________________________________________________________________________
 
-How To Run
+## How To Run
 
-1. Install Flask:
+Install Flask:
+
+```bash
 pip install flask
+```
 
-2.Run the application:
+Run:
+
+```bash
 python app.py
+```
 
-3.Open browser and visit:
+Open in browser:
+
+```text
 http://127.0.0.1:8000
+```
 
-___________________________________________________________________________
+## Screenshots
 
-How It Works
+Login simulation:
 
-- User enters login credentials
-- Flask receives POST request
-- Data is stored in captured.txt
-- User is redirected back to login page
+![Login Demo](screenshots/test1.png)
 
-___________________________________________________________________________
+Awareness result:
 
-Important Note
+![Awareness Demo](screenshots/test2.png)
 
-This project is developed for cybersecurity awareness and academic learning.
-It should only be used in controlled environments for educational purposes.
+## How It Works
+1. User enters demo credentials into the simulated portal  
+2. Flask processes the form submission  
+3. User is shown an awareness message explaining phishing risk  
+4. Demo input is logged locally for educational purposes  
+
+## What I Learned
+Building this project helped me understand:
+- Basic phishing mechanics
+- Social engineering risks
+- User awareness concepts
+- Flask routing and form handling
+
+## Future Improvements
+Possible upgrades:
+- Phishing detection awareness quiz
+- Email phishing examples
+- Security awareness training module
+
+## Disclaimer
+This project is built only for educational and authorized awareness demonstrations.
+
+It is not intended for credential harvesting or malicious use.
