@@ -63,11 +63,11 @@ http://127.0.0.1:8000
 
 Login simulation:
 
-![Login Demo](screenshots/test1.png)
+![Login Demo](screenshots/demo1.png)
 
 Awareness result:
 
-![Awareness Demo](screenshots/test2.png)
+![Awareness Demo](screenshots/demo2.png)
 
 ## How It Works
 1. User enters demo credentials into the simulated portal  
